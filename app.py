@@ -8,7 +8,7 @@ from fsm import TocMachine
 
 
 API_TOKEN = '393548126:AAEgckYRm57w1VJldJEuvpUIE4F2CPEitTE'
-WEBHOOK_URL = 'https://3ca91523.ngrok.io/hook'
+WEBHOOK_URL = 'https://dd85d05c.ngrok.io/hook'
 
 app = Flask(__name__)
 bot = telegram.Bot(token=API_TOKEN)
@@ -74,24 +74,24 @@ machine = TocMachine(
             'dest': 'TNstate1',
         },
         {
-	      	'trigger': 'advance',
+            'trigger': 'advance',
             'source': 'TNstate1',
             'dest': 'TNerror1',
             'conditions': 'is_going_to_TNerror1'
         },
         {
-	      	'trigger': 'TNback1',
+            'trigger': 'TNback1',
             'source': 'TNerror1',
             'dest': 'TNstate1',
         },
         {
-	      	'trigger': 'advance',
+            'trigger': 'advance',
             'source': 'TNstate2',
             'dest': 'TNerror2',
             'conditions': 'is_going_to_TNerror2'
         },
         {
-	      	'trigger': 'TNback2',
+            'trigger': 'TNback2',
             'source': 'TNerror2',
             'dest': 'TNstate2',
         },
@@ -125,24 +125,24 @@ machine = TocMachine(
             'dest': 'NFstate1',
         },
         {
-	      	'trigger': 'advance',
+            'trigger': 'advance',
             'source': 'NFstate1',
             'dest': 'NFerror1',
             'conditions': 'is_going_to_NFerror1'
         },
         {
-	      	'trigger': 'NFback1',
+            'trigger': 'NFback1',
             'source': 'NFerror1',
             'dest': 'NFstate1',
         },
         {
-	      	'trigger': 'advance',
+            'trigger': 'advance',
             'source': 'NFstate2',
             'dest': 'NFerror2',
             'conditions': 'is_going_to_NFerror2'
         },
         {
-	      	'trigger': 'NFback2',
+            'trigger': 'NFback2',
             'source': 'NFerror2',
             'dest': 'NFstate2',
         },
@@ -176,24 +176,24 @@ machine = TocMachine(
             'dest': 'NFGCstate1',
         },
         {
-	      	'trigger': 'advance',
+            'trigger': 'advance',
             'source': 'NFGCstate1',
             'dest': 'NFGCerror1',
             'conditions': 'is_going_to_NFGCerror1'
         },
         {
-	      	'trigger': 'NFGCback1',
+            'trigger': 'NFGCback1',
             'source': 'NFGCerror1',
             'dest': 'NFGCstate1',
         },
         {
-	      	'trigger': 'advance',
+            'trigger': 'advance',
             'source': 'NFGCstate2',
             'dest': 'NFGCerror2',
             'conditions': 'is_going_to_NFGCerror2'
         },
         {
-	      	'trigger': 'NFGCback2',
+            'trigger': 'NFGCback2',
             'source': 'NFGCerror2',
             'dest': 'NFGCstate2',
         }

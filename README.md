@@ -19,7 +19,7 @@ pip3 install -r requirements.txt
 **`ngrok` would be used in the following instruction**
 
 ```sh
-ngrok http 5000
+./ngrok http 5000
 ```
 
 After that, `ngrok` would generate a https URL.
@@ -33,6 +33,9 @@ should set `WEBHOOK_URL` (in app.py) to `generating-https-URL/hook`.因為每次
 ```sh
 python3 app.py
 ```
+
+* pygraphviz (For visualizing Finite State Machine)
+    * [Setup pygraphviz on Ubuntu](http://www.jianshu.com/p/a3da7ecc5303)
 
 ## Finite State Machine
 ![fsm](./img/show-fsm.png)
