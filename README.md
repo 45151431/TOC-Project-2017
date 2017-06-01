@@ -65,7 +65,7 @@ python3 app.py
 在`state1`中
 * 若輸入search會進到`state2`,然後parse威秀時刻表網站並reply上映的電影及編號
 * 若輸入back會回到`user`
-* 若輸入上述兩者以外會進`error1`(reply:錯誤輸入)然後`back1`回state1
+* 若輸入上述兩者以外會進`error1`(reply:錯誤輸入)然後`back1`回`state1`
 
 在`state2`中
 * 若輸入上映的電影編號,會進到`state3`,然後parse網站得到詳細的時刻表並reply,最後`back1`回`state1`
